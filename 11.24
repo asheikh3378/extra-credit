@@ -1,0 +1,7 @@
+sentence = input()
+lst = list(sentence.split())
+sentence2 = input()
+lst2 = list(sentence2.split())
+for i in range(len(lst)):
+    if lst[i] != lst2[i]:
+        print(lst[i], lst2[i])
