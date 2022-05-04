@@ -1,0 +1,15 @@
+user_weights = [float(input('Enter weight 1:\n')),
+                float(input('Enter weight 2:\n')),
+                float(input('Enter weight 3:\n')),
+                float(input('Enter weight 4:\n'))]
+print("Weights:", user_weights)
+
+print('\nAverage weight: %.2f' % (sum(user_weights) / len(user_weights)))
+
+print('Max weight: %.2f\n' % (max(user_weights)))
+
+index_location = int(input('Enter a list location (1 - 4):\n'))
+print('Weight in pounds: %.2f' % user_weights[index_location - 1])
+print('Weight in kilograms: %.2f' % (user_weights[index_location - 1] / 2.2))
+
+print('\nSorted list:', sorted(user_weights))
