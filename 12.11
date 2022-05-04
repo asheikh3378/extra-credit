@@ -1,0 +1,8 @@
+try:
+    user_num=input()
+    div_num=input()
+    print(int(int(user_num)/int(div_num)))
+except ZeroDivisionError:
+    print("Zero Division Exception: integer division or modulo by zero")
+except ValueError as ex2: 
+    print("Input Exception:",ex2)
